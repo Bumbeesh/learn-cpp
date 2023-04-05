@@ -98,45 +98,7 @@ int main() {
 
     Draw(Table, 3);
 
- /*   // 2 практика
-
-    Record* A;//А - указатель на массив, элементы которого - структура Record (указатель = нулевой элемент массива(начало))
-    Record** B;
-    int ElementCount = 3;
-    int ExtendedElementCount = 10;//Кол-во элементов
-
-    A = (Record*)malloc(ElementCount * sizeof(Record)); // Выделяем память размером кол-во элементов * размер одного элемента и преобразуем в Record*
-
-    for (int i = 0; i < ElementCount; i++) {
-        strcpy_s(A[i].Name, Table[i].Name);
-        A[i].Type = Table[i].Type;
-        A[i].Square = Table[i].Square;
-        A[i].Count = Table[i].Count;
-        A[i].Date = Table[i].Date;
-    }
-
-    A = (Record*)realloc(A, 3 * sizeof(Record)); // Увеличиваем память для 10 элементов
-
-    B = (Record**) new Record * [ExtendedElementCount];
-
-    for (int i = 0; i < ExtendedElementCount; i++) {
-        B[i] = (Record*) new Record;
-        *(B[i]) = A[i];
-    }
-
-
-
-    for (int i = 0; i < ExtendedElementCount; i++) {
-        cout << "Адрес A[i] " << &A[i] << " Значение А[i] " << A[i].Name << ' ' << A[i].Type << ' ' << A[i].Square << ' ' << A[i].Count << ' ' << A[i].Date.Day << ' ' << A[i].Date.Month << ' ' << A[i].Date.Year << endl;
-
-    }
-    cout << endl;
-    for (int i = 0; i < ExtendedElementCount; i++) {
-        cout << "Адрес B[i] " << &B[i] << " Значение B[i] " << (*B[i]).Name << endl;
-    }
-    delete[]B;
-    free(A); */
-
+ 
 
     // 4 практика
 
